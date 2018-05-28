@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="632ce614-2083-4201-944e-8aff422e6437" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="bdtree.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bdtree.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="422">
+              <caret line="290" column="0" lean-forward="true" selection-start-line="290" selection-start-column="0" selection-end-line="290" selection-end-column="0" />
+              <folding>
+                <element signature="e#186#204#0" expanded="true" />
+                <marker date="1525795089000" expanded="true" signature="2398:3112" ph="..." />
+                <marker date="1525795089000" expanded="true" signature="2502:3112" ph="..." />
+                <marker date="1525795089000" expanded="true" signature="3261:3516" ph="..." />
+                <marker date="1525795089000" expanded="true" signature="4029:4079" ph="..." />
+                <marker date="1525795089000" expanded="true" signature="4112:4174" ph="..." />
+                <marker date="1525795089000" expanded="true" signature="4431:4666" ph="..." />
+                <marker date="1525795089000" expanded="true" signature="7129:7261" ph="..." />
+                <marker date="1525795089000" expanded="true" signature="7705:8191" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="C45.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/C45.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3792">
+              <caret line="237" column="55" lean-forward="false" selection-start-line="237" selection-start-column="55" selection-end-line="237" selection-end-column="55" />
+              <folding>
+                <element signature="e#1#19#0" expanded="true" />
+                <marker date="1525808007000" expanded="true" signature="2213:2839" ph="..." />
+                <marker date="1525808007000" expanded="true" signature="2317:2839" ph="..." />
+                <marker date="1525808007000" expanded="true" signature="2394:2839" ph="..." />
+                <marker date="1525808007000" expanded="true" signature="2689:2839" ph="..." />
+                <marker date="1525808007000" expanded="true" signature="3899:3952" ph="..." />
+                <marker date="1525808007000" expanded="true" signature="6529:6607" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="randomForest.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/randomForest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="960">
+              <caret line="60" column="36" lean-forward="false" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+                <marker date="1525808007000" expanded="true" signature="1250:1503" ph="..." />
+                <marker date="1525808007000" expanded="true" signature="1628:1749" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="296" column="0" lean-forward="false" selection-start-line="296" selection-start-column="0" selection-end-line="296" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="optimized.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/optimized.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3389">
+              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+                <marker date="1525808007000" expanded="true" signature="129:230" ph="..." />
+                <marker date="1525808007000" expanded="true" signature="3853:3906" ph="..." />
+                <marker date="1525808007000" expanded="true" signature="4620:4888" ph="..." />
+                <marker date="1525808007000" expanded="true" signature="4940:5241" ph="..." />
+                <marker date="1525808007000" expanded="true" signature="6730:6808" ph="..." />
+                <marker date="1525808007000" expanded="true" signature="6827:6905" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data_utils.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data_utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="41" column="13" lean-forward="false" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+                <marker date="1525723097000" expanded="true" signature="1402:1472" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/node.py" />
+        <option value="$PROJECT_DIR$/btree.py" />
+        <option value="$PROJECT_DIR$/datprocess.py" />
+        <option value="$PROJECT_DIR$/data" />
+        <option value="$PROJECT_DIR$/C452.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/visualize.py" />
+        <option value="$PROJECT_DIR$/data_utils.py" />
+        <option value="$PROJECT_DIR$/test2.py" />
+        <option value="$PROJECT_DIR$/bdtree.py" />
+        <option value="$PROJECT_DIR$/optimized.py" />
+        <option value="$PROJECT_DIR$/randomForest.py" />
+        <option value="$PROJECT_DIR$/C45.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="797" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="tree" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tree" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="/usr/bin/python2.7" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.bdtree">
+    <configuration name="C45" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="tree" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/C45.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="bdtree" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="tree" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bdtree.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="randomForest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="tree" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/randomForest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="test2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="tree" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="visualize" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="tree" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/visualize.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.bdtree" />
+      <item index="1" class="java.lang.String" itemvalue="Python.C45" />
+      <item index="2" class="java.lang.String" itemvalue="Python.randomForest" />
+      <item index="3" class="java.lang.String" itemvalue="Python.visualize" />
+      <item index="4" class="java.lang.String" itemvalue="Python.test2" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.bdtree" />
+        <item index="1" class="java.lang.String" itemvalue="Python.randomForest" />
+        <item index="2" class="java.lang.String" itemvalue="Python.visualize" />
+        <item index="3" class="java.lang.String" itemvalue="Python.C45" />
+        <item index="4" class="java.lang.String" itemvalue="Python.test2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="797" extended-state="0" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13876967" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875773" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22919509" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17598909" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7281831" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/btree.py</url>
+          <line>149</line>
+          <option name="timeStamp" value="132" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/btree.py</url>
+          <line>151</line>
+          <option name="timeStamp" value="134" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/btree.py</url>
+          <line>160</line>
+          <option name="timeStamp" value="135" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/btree.py</url>
+          <line>159</line>
+          <option name="timeStamp" value="136" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/btree.py</url>
+          <line>103</line>
+          <option name="timeStamp" value="138" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/btree.py</url>
+          <line>102</line>
+          <option name="timeStamp" value="139" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="229" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/bdtree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5280">
+          <caret line="333" column="21" lean-forward="false" selection-start-line="333" selection-start-column="21" selection-end-line="333" selection-end-column="21" />
+          <folding>
+            <element signature="e#186#204#0" expanded="true" />
+            <marker date="1525795089000" expanded="true" signature="2398:3112" ph="..." />
+            <marker date="1525795089000" expanded="true" signature="2502:3112" ph="..." />
+            <marker date="1525795089000" expanded="true" signature="3261:3516" ph="..." />
+            <marker date="1525795089000" expanded="true" signature="4029:4079" ph="..." />
+            <marker date="1525795089000" expanded="true" signature="4112:4174" ph="..." />
+            <marker date="1525795089000" expanded="true" signature="4431:4666" ph="..." />
+            <marker date="1525795089000" expanded="true" signature="7129:7261" ph="..." />
+            <marker date="1525795089000" expanded="true" signature="7705:8191" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C45.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4496">
+          <caret line="281" column="45" lean-forward="true" selection-start-line="281" selection-start-column="45" selection-end-line="281" selection-end-column="45" />
+          <folding>
+            <element signature="e#1#19#0" expanded="true" />
+            <marker date="1525808007000" expanded="true" signature="2213:2839" ph="..." />
+            <marker date="1525808007000" expanded="true" signature="2317:2839" ph="..." />
+            <marker date="1525808007000" expanded="true" signature="2394:2839" ph="..." />
+            <marker date="1525808007000" expanded="true" signature="2689:2839" ph="..." />
+            <marker date="1525808007000" expanded="true" signature="3899:3952" ph="..." />
+            <marker date="1525808007000" expanded="true" signature="6529:6607" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4688">
+          <caret line="296" column="0" lean-forward="true" selection-start-line="296" selection-start-column="0" selection-end-line="296" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/randomForest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="31" column="46" lean-forward="true" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <marker date="1525808007000" expanded="true" signature="1250:1503" ph="..." />
+            <marker date="1525808007000" expanded="true" signature="1628:1749" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="41" column="13" lean-forward="false" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <marker date="1525723097000" expanded="true" signature="1402:1472" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/visualize.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2400">
+          <caret line="151" column="12" lean-forward="true" selection-start-line="151" selection-start-column="12" selection-end-line="151" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bdtree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#186#204#0" expanded="true" />
+            <marker date="1525795089000" expanded="true" signature="2398:3112" ph="..." />
+            <marker date="1525795089000" expanded="true" signature="2502:3112" ph="..." />
+            <marker date="1525795089000" expanded="true" signature="3261:3516" ph="..." />
+            <marker date="1525795089000" expanded="true" signature="4029:4079" ph="..." />
+            <marker date="1525795089000" expanded="true" signature="4112:4174" ph="..." />
+            <marker date="1525795089000" expanded="true" signature="4431:4666" ph="..." />
+            <marker date="1525795089000" expanded="true" signature="7129:7261" ph="..." />
+            <marker date="1525795089000" expanded="true" signature="7705:8191" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C45.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4688">
+          <caret line="296" column="0" lean-forward="true" selection-start-line="296" selection-start-column="0" selection-end-line="296" selection-end-column="0" />
+          <folding>
+            <element signature="e#1#19#0" expanded="true" />
+            <marker date="1525808007000" expanded="true" signature="2213:2839" ph="..." />
+            <marker date="1525808007000" expanded="true" signature="2317:2839" ph="..." />
+            <marker date="1525808007000" expanded="true" signature="2394:2839" ph="..." />
+            <marker date="1525808007000" expanded="true" signature="2689:2839" ph="..." />
+            <marker date="1525808007000" expanded="true" signature="3899:3952" ph="..." />
+            <marker date="1525808007000" expanded="true" signature="6529:6607" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="848">
+          <caret line="53" column="17" lean-forward="true" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/visualize.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <marker date="1525723097000" expanded="true" signature="1402:1472" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/pycharm/lib/python3.6/abc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="206" column="0" lean-forward="false" selection-start-line="206" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/pycharm/lib/python3.6/collections/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="615" column="0" lean-forward="false" selection-start-line="615" selection-start-column="0" selection-end-line="615" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/pycharm/lib/python3.6/_collections_abc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="395" column="0" lean-forward="false" selection-start-line="395" selection-start-column="0" selection-end-line="395" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datprocess.py" />
+    <entry file="file://$PROJECT_DIR$/node.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/btree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="93" column="17" lean-forward="true" selection-start-line="93" selection-start-column="17" selection-end-line="93" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C452.py" />
+    <entry file="file://$PROJECT_DIR$/data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="100" column="30" lean-forward="false" selection-start-line="100" selection-start-column="30" selection-end-line="100" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/pycharm/lib/python3.6/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="308" column="0" lean-forward="false" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/visualize.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2400">
+          <caret line="151" column="12" lean-forward="false" selection-start-line="151" selection-start-column="12" selection-end-line="151" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optimized.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3389">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <marker date="1525808007000" expanded="true" signature="129:230" ph="..." />
+            <marker date="1525808007000" expanded="true" signature="3853:3906" ph="..." />
+            <marker date="1525808007000" expanded="true" signature="4620:4888" ph="..." />
+            <marker date="1525808007000" expanded="true" signature="4940:5241" ph="..." />
+            <marker date="1525808007000" expanded="true" signature="6730:6808" ph="..." />
+            <marker date="1525808007000" expanded="true" signature="6827:6905" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="296" column="0" lean-forward="false" selection-start-line="296" selection-start-column="0" selection-end-line="296" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="41" column="13" lean-forward="false" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <marker date="1525723097000" expanded="true" signature="1402:1472" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/randomForest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="60" column="36" lean-forward="false" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <marker date="1525808007000" expanded="true" signature="1250:1503" ph="..." />
+            <marker date="1525808007000" expanded="true" signature="1628:1749" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/C45.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3792">
+          <caret line="237" column="55" lean-forward="false" selection-start-line="237" selection-start-column="55" selection-end-line="237" selection-end-column="55" />
+          <folding>
+            <element signature="e#1#19#0" expanded="true" />
+            <marker date="1525808007000" expanded="true" signature="2213:2839" ph="..." />
+            <marker date="1525808007000" expanded="true" signature="2317:2839" ph="..." />
+            <marker date="1525808007000" expanded="true" signature="2394:2839" ph="..." />
+            <marker date="1525808007000" expanded="true" signature="2689:2839" ph="..." />
+            <marker date="1525808007000" expanded="true" signature="3899:3952" ph="..." />
+            <marker date="1525808007000" expanded="true" signature="6529:6607" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bdtree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="290" column="0" lean-forward="true" selection-start-line="290" selection-start-column="0" selection-end-line="290" selection-end-column="0" />
+          <folding>
+            <element signature="e#186#204#0" expanded="true" />
+            <marker date="1525795089000" expanded="true" signature="2398:3112" ph="..." />
+            <marker date="1525795089000" expanded="true" signature="2502:3112" ph="..." />
+            <marker date="1525795089000" expanded="true" signature="3261:3516" ph="..." />
+            <marker date="1525795089000" expanded="true" signature="4029:4079" ph="..." />
+            <marker date="1525795089000" expanded="true" signature="4112:4174" ph="..." />
+            <marker date="1525795089000" expanded="true" signature="4431:4666" ph="..." />
+            <marker date="1525795089000" expanded="true" signature="7129:7261" ph="..." />
+            <marker date="1525795089000" expanded="true" signature="7705:8191" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

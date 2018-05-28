@@ -165,17 +165,13 @@ class Relu(Operation):
     def compute_output(self):
         x, = self.input_nodes
         #print(x.output_value)
-        #for index in range(len(x.output_value[0])):
-        #    if x.output_value[0][index] < 0:
-        #        x.output_value[0][index] = 0
+
         self.output_value = np.maximum(x.output_value,0)
 
     def compute_gradient(self, grad=None):
         if grad is None:
             grad = np.ones_like(self.output_value)
-        #return grad*[[0 if num <= 0 else 1 for num in item] for item in np.sign(self.output_value)]
-        #print('grad_forward:', grad)
-        #print('output_forward:', self.output_value)
+
         return grad*np.maximum(np.sign(self.output_value),0)
 
 def relu(x, name=None):
@@ -264,7 +260,8 @@ class ReduceSum(Operation):
         return self.output_value
 
     def compute_gradient(self, grad=None):
-        input_value = self.input_nodes[0].output_value
+        x, = self.input_nodes
+        input_value = x.output_value
 
         if grad is None:
             grad = np.ones_like(self.output_value)

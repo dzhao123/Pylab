@@ -33,7 +33,6 @@ def compute_gradients(target_op):
 
                 else:
                     grads_wrt_node_output.append(grad_wrt_node_output)
-
             tot_grad_wrt_node_output = sum(grads_wrt_node_output)
             grad_table[node] = tot_grad_wrt_node_output
 
@@ -54,6 +53,33 @@ class GradientDescentOptimizer(object):
 
     def minimize(self, loss):
         learning_rate = self.learning_rate
+
+        class MinimizationOperation(Operation):
+            def compute_output(self):
+                grad_table = compute_gradients(loss)
+
+                for var in DEFAULT_GRAPH.trainable_variables:
+                    if var in grad_table:
+                        grad = grad_table[var]
+
+                    #print(var.name)
+                    #print(var.output_value.shape)
+                    #print(grad.shape)
+                    var.output_value = var.output_value - learning_rate*grad
+        return MinimizationOperation()
+
+
+# ------------------------
+# GradientDescentOptimizer
+# ------------------------
+class ExponentialDecay(object):
+    def __init__(self, learning_rate, decay_rate):
+        self.learning_rate = learning_rate
+        self.decay_rate = decay_rate
+
+    def minimize(self, loss):
+        learning_rate = self.learning_rate
+        self.learning_rate = learning_rate*np.exp(self.decay_rate-1)
 
         class MinimizationOperation(Operation):
             def compute_output(self):

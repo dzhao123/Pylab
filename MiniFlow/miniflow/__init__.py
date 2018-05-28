@@ -6,6 +6,7 @@ from .optimizer import *
 from .placeholder import *
 from .session import *
 from .variable import *
+from .convolution import *
 
 import builtins
 DEFAULT_GRAPH = builtins.DEFAULT_GRAPH = Graph()

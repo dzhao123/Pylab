@@ -36,7 +36,9 @@ class DataUtils(object):
                 imgVal[j] = imgVal[j]/255
                 if imgVal[j] > 1:
                     imgVal[j] = 1
-            images.append(imgVal)
+                #else:
+                #    imgVal[j] = [0]
+            images.append(np.array(imgVal).reshape(28,28,1))
         return np.array(images)
     	
     def getLabel(self):

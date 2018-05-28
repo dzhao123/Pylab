@@ -69,3 +69,21 @@ class OneHotEncoding(object):
 
 def onehot_encoding(y, n_classes, name=None):
     return OneHotEncoding(name).normalization(y, n_classes)
+
+
+#---------------
+# TruncatedNormal
+#---------------
+class TruncatedNormal(object):
+    def __init__(self, name):
+        self.output_value = None
+        self.name = name
+
+    def generate_output(self, input_shape):
+        if self.output_value is None:
+            self.output_value = np.random.randn(input_shape[0],input_shape[1],input_shape[2],input_shape[3])
+        #print(np.random.randn(input_shape[0],input_shape[1],input_shape[2],input_shape[3]))
+        return self.output_value
+
+def truncated_normal(*input_shape, name=None):
+    return TruncatedNormal(name).generate_output(input_shape)

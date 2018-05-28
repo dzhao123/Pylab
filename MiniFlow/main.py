@@ -38,7 +38,8 @@ with mf.Graph().as_default():
     y3 = mf.relu(mf.matmul(y2,w3)+b3)
     #y3 = batch_average(y3)
     loss = mf.reduce_sum(mf.square(y_-y3))
-    train_op = mf.GradientDescentOptimizer(learning_rate=0.005).minimize(loss)
+    #train_op = mf.GradientDescentOptimizer(learning_rate=0.0045).minimize(loss)
+    train_op = mf.ExponentialDecay(learning_rate=0.01, decay_rate=0.01).minimize(loss)
     train_y = mf.onehot_encoding(train_y, 10)#normalization(train_y,10)
     test_y = mf.onehot_encoding(test_y, 10)#normalization(test_y,10)
     #feed_dict = {x:train_X, y_:normalization(train_y,10)}
