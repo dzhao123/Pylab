@@ -35,21 +35,27 @@ class Constant(object):
 def constant(value, name=None):
     return Constant(value, name=name)
 
+
 #-------------
 # RandomNormal
 #-------------
-class RandomNormal(object):
-    def __init__(self, name):
-        self.output_value = None
-        self.name = name
+class RandomNormal(Constant):
+    def __init__(self, *value, name):
+        super(self.__class__,self).__init__(value, name=name)
+        #self.output_value = np.random.normal(self.value[1], self.value[2], self.value[0])
+        #if self.output_nodes is None:
+        #    self.output_nodes.input_
 
-    def generate_output(self, input_shape, mu, sigma):
-        if self.output_value is None:
-            self.output_value = np.random.normal(mu, sigma, input_shape)
+    def compute_output(self):
+        #if self.output_value is None:
+        self.output_value = np.random.normal(self.value[1], self.value[2], self.value[0])
         return self.output_value
 
+    def compute_gradient(self):
+        return np.zeros_like(self.output_value)
+
 def random_normal(input_shape, mu, sigma, name=None):
-    return RandomNormal(name).generate_output(input_shape, mu, sigma)
+    return RandomNormal(input_shape, mu, sigma, name=name)
 
 
 #---------------
@@ -74,16 +80,19 @@ def onehot_encoding(y, n_classes, name=None):
 #---------------
 # TruncatedNormal
 #---------------
-class TruncatedNormal(object):
-    def __init__(self, name):
-        self.output_value = None
-        self.name = name
+class TruncatedNormal(Constant):
+    def __init__(self, *value, name):
+       super(self.__class__,self).__init__(value, name=name)
 
-    def generate_output(self, input_shape):
+    def compute_output(self):
         if self.output_value is None:
-            self.output_value = np.random.randn(input_shape[0],input_shape[1],input_shape[2],input_shape[3])
-        #print(np.random.randn(input_shape[0],input_shape[1],input_shape[2],input_shape[3]))
+            self.output_value = \
+                (np.random.randn(self.value[0][0],self.value[0][1],self.value[0][2],self.value[0][3])+self.value[1])*self.value[2]
         return self.output_value
 
-def truncated_normal(*input_shape, name=None):
-    return TruncatedNormal(name).generate_output(input_shape)
+    def compute_gradient(self):
+        return np.zeros_like(self.output_value)
+
+
+def truncated_normal(input_shape, mu=0.0, sigma=1.0, name=None):
+    return TruncatedNormal(input_shape, mu, sigma, name=name)

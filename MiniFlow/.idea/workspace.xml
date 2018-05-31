@@ -14,13 +14,37 @@
       <content type="file-editors">
         <state>
           <leaf>
-            <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/main.py">
+            <file leaf-file-name="test.py" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/test.py">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="277">
-                    <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+                  <state relative-caret-position="566">
+                    <caret line="58" column="42" lean-forward="true" selection-start-line="58" selection-start-column="42" selection-end-line="58" selection-end-column="42" />
                     <folding>
                       <element signature="e#0#21#0" expanded="true" />
+                      <marker date="1527743761000" expanded="true" signature="538:2301" ph="..." />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+    <window id="2">
+      <content type="file-editors">
+        <state>
+          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+            <file leaf-file-name="convolution.py" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/miniflow/convolution.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="854">
+                    <caret line="201" column="24" lean-forward="true" selection-start-line="201" selection-start-column="24" selection-end-line="201" selection-end-column="24" />
+                    <folding>
+                      <element signature="e#0#23#0" expanded="true" />
+                      <marker date="1527743529000" expanded="true" signature="237:644" ph="..." />
+                      <marker date="1527743529000" expanded="true" signature="6795:6842" ph="..." />
+                      <marker date="1527743529000" expanded="true" signature="7044:7133" ph="..." />
                     </folding>
                   </state>
                 </provider>
@@ -36,10 +60,23 @@
       <file leaf-file-name="operator.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/miniflow/operator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2011">
-              <caret line="174" column="0" lean-forward="false" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
+            <state relative-caret-position="-2809">
+              <caret line="200" column="0" lean-forward="true" selection-start-line="200" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="placeholder.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/miniflow/placeholder.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#20#0" expanded="true" />
+                <marker date="1527692872000" expanded="true" signature="301:470" ph="..." />
               </folding>
             </state>
           </provider>
@@ -48,45 +85,18 @@
       <file leaf-file-name="variable.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/miniflow/variable.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="319">
+              <caret line="23" column="53" lean-forward="true" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/miniflow/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="55" column="24" lean-forward="true" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-                <marker date="1527523484000" expanded="true" signature="550:1815" ph="..." />
+                <marker date="1527742694000" expanded="true" signature="202:521" ph="..." />
+                <marker date="1527742694000" expanded="true" signature="1052:1317" ph="..." />
+                <marker date="1527742694000" expanded="true" signature="1118:1195" ph="..." />
+                <marker date="1527742694000" expanded="true" signature="1552:1618" ph="..." />
+                <marker date="1527742694000" expanded="true" signature="1706:2129" ph="..." />
+                <marker date="1527742694000" expanded="true" signature="1737:1805" ph="..." />
+                <marker date="1527742694000" expanded="true" signature="1850:2129" ph="..." />
+                <marker date="1527742694000" expanded="true" signature="2178:2241" ph="..." />
               </folding>
             </state>
           </provider>
@@ -95,49 +105,83 @@
       <file leaf-file-name="optimizer.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/miniflow/optimizer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="66" column="21" lean-forward="false" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
+            <state relative-caret-position="-281">
+              <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
               <folding>
-                <marker date="1527521192000" expanded="true" signature="2498:2541" ph="..." />
+                <element signature="e#0#20#0" expanded="true" />
+                <marker date="1527648622000" expanded="true" signature="2498:2541" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="convolution.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/miniflow/convolution.py">
+      <file leaf-file-name="test3.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="112" column="12" lean-forward="true" selection-start-line="112" selection-start-column="12" selection-end-line="112" selection-end-column="12" />
-              <folding>
-                <marker date="1527522416000" expanded="true" signature="397:1679" ph="..." />
-                <marker date="1527522416000" expanded="true" signature="1010:1613" ph="..." />
-                <marker date="1527522416000" expanded="true" signature="1124:1613" ph="..." />
-                <marker date="1527522416000" expanded="true" signature="1166:1613" ph="..." />
-                <marker date="1527522416000" expanded="true" signature="1215:1613" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="function.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/miniflow/function.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="613">
-              <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+            <state relative-caret-position="96">
+              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="session.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="constant.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/miniflow/constant.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="103">
+              <caret line="60" column="16" lean-forward="true" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#20#0" expanded="true" />
+                <marker date="1527743437000" expanded="true" signature="993:1055" ph="..." />
+                <marker date="1527743437000" expanded="true" signature="1254:1416" ph="..." />
+                <marker date="1527743437000" expanded="true" signature="2247:2613" ph="..." />
+                <marker date="1527743437000" expanded="true" signature="2285:2340" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/miniflow/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="23" lean-forward="true" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mnist.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/miniflow/mnist.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+                <marker date="1527636132000" expanded="true" signature="1286:1326" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="session.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/miniflow/session.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="455">
-              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="656">
+              <caret line="41" column="77" lean-forward="false" selection-start-line="41" selection-start-column="77" selection-end-line="41" selection-end-column="77" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="codecs.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/codecs.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="308" column="0" lean-forward="false" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -162,32 +206,34 @@
         <option value="$PROJECT_DIR$/Placeholder.py" />
         <option value="$PROJECT_DIR$/Optimizer.py" />
         <option value="$PROJECT_DIR$/Session.py" />
-        <option value="$PROJECT_DIR$/miniflow/constant.py" />
         <option value="$PROJECT_DIR$/miniflow/functions.py" />
         <option value="$PROJECT_DIR$/miniflow/graph.py" />
-        <option value="$PROJECT_DIR$/miniflow/placeholder.py" />
-        <option value="$PROJECT_DIR$/miniflow/variable.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/result" />
         <option value="$PROJECT_DIR$/miniflow/Convolutiion.py" />
         <option value="$PROJECT_DIR$/miniflow/Convolution.py" />
-        <option value="$PROJECT_DIR$/miniflow/session.py" />
         <option value="$PROJECT_DIR$/miniflow/__init__.py" />
+        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/miniflow/mnist.py" />
-        <option value="$PROJECT_DIR$/miniflow/operator.py" />
-        <option value="$PROJECT_DIR$/miniflow/function.py" />
-        <option value="$PROJECT_DIR$/miniflow/optimizer.py" />
-        <option value="$PROJECT_DIR$/miniflow/convolution.py" />
+        <option value="$PROJECT_DIR$/miniflow/cloud.py" />
         <option value="$PROJECT_DIR$/test2.py" />
+        <option value="$PROJECT_DIR$/miniflow/optimizer.py" />
+        <option value="$PROJECT_DIR$/miniflow/operator.py" />
+        <option value="$PROJECT_DIR$/miniflow/placeholder.py" />
+        <option value="$PROJECT_DIR$/miniflow/function.py" />
+        <option value="$PROJECT_DIR$/miniflow/session.py" />
+        <option value="$PROJECT_DIR$/miniflow/variable.py" />
+        <option value="$PROJECT_DIR$/test3.py" />
+        <option value="$PROJECT_DIR$/miniflow/constant.py" />
+        <option value="$PROJECT_DIR$/miniflow/convolution.py" />
         <option value="$PROJECT_DIR$/test.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1066" />
-    <option name="y" value="158" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="595" />
+    <option name="y" value="34" />
     <option name="width" value="1368" />
-    <option name="height" value="1336" />
+    <option name="height" value="1325" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -204,6 +250,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -220,7 +267,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -313,18 +359,37 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <list size="4">
+    <configuration name="test3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="MiniFlow" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.main" />
       <item index="1" class="java.lang.String" itemvalue="Python.test" />
       <item index="2" class="java.lang.String" itemvalue="Python.convolution" />
       <item index="3" class="java.lang.String" itemvalue="Python.test2" />
+      <item index="4" class="java.lang.String" itemvalue="Python.test3" />
     </list>
     <recent_temporary>
-      <list size="4">
+      <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.test" />
-        <item index="1" class="java.lang.String" itemvalue="Python.test2" />
-        <item index="2" class="java.lang.String" itemvalue="Python.convolution" />
-        <item index="3" class="java.lang.String" itemvalue="Python.main" />
+        <item index="1" class="java.lang.String" itemvalue="Python.test3" />
+        <item index="2" class="java.lang.String" itemvalue="Python.test2" />
+        <item index="3" class="java.lang.String" itemvalue="Python.convolution" />
+        <item index="4" class="java.lang.String" itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
@@ -332,14 +397,14 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1066" y="158" width="1368" height="1336" extended-state="0" />
+    <frame x="595" y="34" width="1368" height="1325" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17571644" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18024133" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32275972" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3301887" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2971698" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29103887" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32880846" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -357,6 +422,108 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/miniflow/optimizer.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="212" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="229" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/miniflow/constant.py</url>
+          <line>82</line>
+          <option name="timeStamp" value="230" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/miniflow/constant.py</url>
+          <line>83</line>
+          <option name="timeStamp" value="231" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/miniflow/constant.py</url>
+          <line>84</line>
+          <option name="timeStamp" value="232" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/miniflow/constant.py</url>
+          <line>87</line>
+          <option name="timeStamp" value="234" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/miniflow/constant.py</url>
+          <line>86</line>
+          <option name="timeStamp" value="235" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/miniflow/constant.py</url>
+          <line>88</line>
+          <option name="timeStamp" value="236" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/miniflow/constant.py</url>
+          <line>90</line>
+          <option name="timeStamp" value="237" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/miniflow/constant.py</url>
+          <line>92</line>
+          <option name="timeStamp" value="238" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/miniflow/constant.py</url>
+          <line>93</line>
+          <option name="timeStamp" value="239" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/miniflow/session.py</url>
+          <line>27</line>
+          <option name="timeStamp" value="240" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/miniflow/session.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="241" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/miniflow/session.py</url>
+          <line>31</line>
+          <option name="timeStamp" value="242" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/miniflow/session.py</url>
+          <line>34</line>
+          <option name="timeStamp" value="243" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/miniflow/session.py</url>
+          <line>32</line>
+          <option name="timeStamp" value="244" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/miniflow/session.py</url>
+          <line>30</line>
+          <option name="timeStamp" value="245" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/miniflow/session.py</url>
+          <line>33</line>
+          <option name="timeStamp" value="246" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/miniflow/session.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="247" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/miniflow/variable.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="248" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -364,7 +531,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="200" />
+      <option name="time" value="249" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -375,22 +542,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/miniflow/function.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="928">
-          <caret line="59" column="32" lean-forward="false" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="30" column="80" lean-forward="false" selection-start-line="30" selection-start-column="80" selection-end-line="30" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/miniflow/placeholder.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16">
@@ -414,7 +565,7 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
-            <marker date="1527523484000" expanded="true" signature="550:1815" ph="..." />
+            <marker date="1527743761000" expanded="true" signature="538:2301" ph="..." />
           </folding>
         </state>
       </provider>
@@ -424,11 +575,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1527522416000" expanded="true" signature="397:1679" ph="..." />
-            <marker date="1527522416000" expanded="true" signature="1010:1613" ph="..." />
-            <marker date="1527522416000" expanded="true" signature="1124:1613" ph="..." />
-            <marker date="1527522416000" expanded="true" signature="1166:1613" ph="..." />
-            <marker date="1527522416000" expanded="true" signature="1215:1613" ph="..." />
+            <element signature="e#0#23#0" expanded="true" />
+            <marker date="1527743529000" expanded="true" signature="237:644" ph="..." />
+            <marker date="1527743529000" expanded="true" signature="6795:6842" ph="..." />
+            <marker date="1527743529000" expanded="true" signature="7044:7133" ph="..." />
           </folding>
         </state>
       </provider>
@@ -438,7 +588,7 @@
         <state relative-caret-position="768">
           <caret line="49" column="15" lean-forward="false" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="15" />
           <folding>
-            <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#0#21#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -447,9 +597,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -460,11 +608,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/miniflow/function.py">
+    <entry file="file://$PROJECT_DIR$/miniflow/constant.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="928">
           <caret line="59" column="32" lean-forward="false" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
-          <folding />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+            <marker date="1527743437000" expanded="true" signature="993:1055" ph="..." />
+            <marker date="1527743437000" expanded="true" signature="1254:1416" ph="..." />
+            <marker date="1527743437000" expanded="true" signature="2247:2613" ph="..." />
+            <marker date="1527743437000" expanded="true" signature="2285:2340" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -473,8 +627,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
           <folding>
-            <element signature="e#0#18#0" expanded="false" />
-            <marker date="1527475808000" expanded="true" signature="1158:1268" ph="..." />
+            <element signature="e#0#18#0" expanded="true" />
+            <marker date="1527636132000" expanded="true" signature="1286:1326" ph="..." />
           </folding>
         </state>
       </provider>
@@ -494,19 +648,13 @@
         <state relative-caret-position="1216">
           <caret line="79" column="49" lean-forward="false" selection-start-line="79" selection-start-column="49" selection-end-line="79" selection-end-column="49" />
           <folding>
-            <marker date="1527521192000" expanded="true" signature="2498:2541" ph="..." />
+            <element signature="e#0#20#0" expanded="true" />
+            <marker date="1527648622000" expanded="true" signature="2498:2541" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/result">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="30" column="80" lean-forward="true" selection-start-line="30" selection-start-column="80" selection-end-line="30" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/result" />
     <entry file="file://$PROJECT_DIR$/miniflow/placeholder.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16">
@@ -529,7 +677,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#0#21#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -538,9 +686,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -566,17 +712,23 @@
         <state relative-caret-position="0">
           <caret line="0" column="18" lean-forward="true" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
           <folding>
-            <element signature="e#0#18#0" expanded="false" />
-            <marker date="1527475808000" expanded="true" signature="1158:1268" ph="..." />
+            <element signature="e#0#18#0" expanded="true" />
+            <marker date="1527636132000" expanded="true" signature="1286:1326" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/miniflow/function.py">
+    <entry file="file://$PROJECT_DIR$/miniflow/constant.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1040">
           <caret line="66" column="27" lean-forward="true" selection-start-line="66" selection-start-column="27" selection-end-line="66" selection-end-column="27" />
-          <folding />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+            <marker date="1527743437000" expanded="true" signature="993:1055" ph="..." />
+            <marker date="1527743437000" expanded="true" signature="1254:1416" ph="..." />
+            <marker date="1527743437000" expanded="true" signature="2247:2613" ph="..." />
+            <marker date="1527743437000" expanded="true" signature="2285:2340" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -595,7 +747,8 @@
         <state relative-caret-position="0">
           <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
           <folding>
-            <marker date="1527521192000" expanded="true" signature="2498:2541" ph="..." />
+            <element signature="e#0#20#0" expanded="true" />
+            <marker date="1527648622000" expanded="true" signature="2498:2541" ph="..." />
           </folding>
         </state>
       </provider>
@@ -627,8 +780,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#18#0" expanded="false" />
-            <marker date="1527475808000" expanded="true" signature="1158:1268" ph="..." />
+            <element signature="e#0#18#0" expanded="true" />
+            <marker date="1527636132000" expanded="true" signature="1286:1326" ph="..." />
           </folding>
         </state>
       </provider>
@@ -647,29 +800,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/miniflow/placeholder.py">
+    <entry file="file://$PROJECT_DIR$/result" />
+    <entry file="file://$PROJECT_DIR$/miniflow/cloud.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="1" column="6" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/result">
+    <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="30" column="80" lean-forward="false" selection-start-line="30" selection-start-column="80" selection-end-line="30" selection-end-column="80" />
+        <state relative-caret-position="512">
+          <caret line="32" column="88" lean-forward="true" selection-start-line="32" selection-start-column="88" selection-end-line="32" selection-end-column="88" />
+          <folding>
+            <element signature="e#0#21#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniflow/placeholder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+            <marker date="1527692872000" expanded="true" signature="301:470" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/miniflow/mnist.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="40" column="42" lean-forward="false" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#18#0" expanded="false" />
-            <marker date="1527475808000" expanded="true" signature="1158:1268" ph="..." />
+            <element signature="e#0#18#0" expanded="true" />
+            <marker date="1527636132000" expanded="true" signature="1286:1326" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniflow/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="23" lean-forward="true" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -681,103 +865,97 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/miniflow/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/miniflow/variable.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="319">
+          <caret line="23" column="53" lean-forward="true" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
+            <marker date="1527742694000" expanded="true" signature="202:521" ph="..." />
+            <marker date="1527742694000" expanded="true" signature="1052:1317" ph="..." />
+            <marker date="1527742694000" expanded="true" signature="1118:1195" ph="..." />
+            <marker date="1527742694000" expanded="true" signature="1552:1618" ph="..." />
+            <marker date="1527742694000" expanded="true" signature="1706:2129" ph="..." />
+            <marker date="1527742694000" expanded="true" signature="1737:1805" ph="..." />
+            <marker date="1527742694000" expanded="true" signature="1850:2129" ph="..." />
+            <marker date="1527742694000" expanded="true" signature="2178:2241" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/miniflow/operator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2011">
-          <caret line="174" column="0" lean-forward="false" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
+        <state relative-caret-position="-2809">
+          <caret line="200" column="0" lean-forward="true" selection-start-line="200" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniflow/constant.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="60" column="16" lean-forward="true" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+            <marker date="1527743437000" expanded="true" signature="993:1055" ph="..." />
+            <marker date="1527743437000" expanded="true" signature="1254:1416" ph="..." />
+            <marker date="1527743437000" expanded="true" signature="2247:2613" ph="..." />
+            <marker date="1527743437000" expanded="true" signature="2285:2340" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="566">
+          <caret line="58" column="42" lean-forward="true" selection-start-line="58" selection-start-column="42" selection-end-line="58" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+            <marker date="1527743761000" expanded="true" signature="538:2301" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniflow/optimizer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-281">
+          <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+            <marker date="1527648622000" expanded="true" signature="2498:2541" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/miniflow/session.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="656">
+          <caret line="41" column="77" lean-forward="false" selection-start-line="41" selection-start-column="77" selection-end-line="41" selection-end-column="77" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/miniflow/function.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
-          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniflow/optimizer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="66" column="21" lean-forward="false" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
-          <folding>
-            <marker date="1527521192000" expanded="true" signature="2498:2541" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="55" column="24" lean-forward="true" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-            <marker date="1527523484000" expanded="true" signature="550:1815" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/miniflow/convolution.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="112" column="12" lean-forward="true" selection-start-line="112" selection-start-column="12" selection-end-line="112" selection-end-column="12" />
+        <state relative-caret-position="854">
+          <caret line="201" column="24" lean-forward="true" selection-start-line="201" selection-start-column="24" selection-end-line="201" selection-end-column="24" />
           <folding>
-            <marker date="1527522416000" expanded="true" signature="397:1679" ph="..." />
-            <marker date="1527522416000" expanded="true" signature="1010:1613" ph="..." />
-            <marker date="1527522416000" expanded="true" signature="1124:1613" ph="..." />
-            <marker date="1527522416000" expanded="true" signature="1166:1613" ph="..." />
-            <marker date="1527522416000" expanded="true" signature="1215:1613" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#0#23#0" expanded="true" />
+            <marker date="1527743529000" expanded="true" signature="237:644" ph="..." />
+            <marker date="1527743529000" expanded="true" signature="6795:6842" ph="..." />
+            <marker date="1527743529000" expanded="true" signature="7044:7133" ph="..." />
           </folding>
         </state>
       </provider>

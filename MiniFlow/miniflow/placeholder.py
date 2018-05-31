@@ -5,21 +5,13 @@ from .operator import *
 # ------------------------------------------------------------------------------
 
 class Placeholder(object):
-    def __init__(self, name=None):
-        # Output value of this operation in session execution.
+    def __init__(self, input_shape, name=None):
         self.output_value = None
-
-        # Nodes that receive this placeholder node as input.
         self.output_nodes = []
-
-        # Placeholder node name.
         self.name = name
-
-        # Graph the placeholder node belongs to.
         self.graph = DEFAULT_GRAPH
-
-        # Add to the currently active default graph.
         self.graph.placeholders.append(self)
+        self.output_shape = input_shape
 
     def __add__(self, other):
         return Add(self, other)
@@ -33,5 +25,5 @@ class Placeholder(object):
     def __mul__(self, other):
         return Multiply(self, other)
 
-def placeholder(name=None):
-    return Placeholder(name=name)
+def placeholder(input_shape=None, name=None):
+    return Placeholder(input_shape=input_shape, name=name)

@@ -89,5 +89,5 @@ class ExponentialDecay(object):
                     if var in grad_table:
                         grad = grad_table[var]
 
-                    var.output_value = var.output_value - learning_rate*grad
+                    var.output_value = var.output_value + learning_rate*grad
         return MinimizationOperation()

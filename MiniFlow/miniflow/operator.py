@@ -17,6 +17,9 @@ class Operation(object):
             node.output_nodes.append(self)
         self.graph.operations.append(self)
 
+    def get_shape(self):
+        raise NotImplementedError
+
     def compute_output(self):
         raise NotImplementedError
 
@@ -41,6 +44,11 @@ class Operation(object):
 class Add(Operation):
     def __init__(self, x, y, name=None):
         super(self.__class__, self).__init__(x, y, name=name)
+
+    def get_shape(self):
+        pass
+
+
 
     def compute_output(self):
         x, y = self.input_nodes
@@ -80,6 +88,9 @@ class Multiply(Operation):
     def __init__(self, x, y, name=None):
         super(self.__class__, self).__init__(x, y, name=name)
 
+    def get_shape(self):
+        pass
+
     def compute_output(self):
         x, y = self.input_nodes
         self.output_value = np.multiply(x.output_value, y.output_value)
@@ -118,6 +129,9 @@ class MatMul(Operation):
     def __init__(self, x, y, name=None):
         super(self.__class__, self).__init__(x, y, name=name)
 
+    def get_shape(self):
+        pass
+
     def compute_output(self):
         x, y = self.input_nodes
         self.output_value = np.dot(x.output_value, y.output_value)
@@ -145,6 +159,10 @@ class Sigmoid(Operation):
     def __init__(self, x, name=None):
         super(self.__class__, self).__init__(x, name=name)
 
+    def get_shape(self):
+        pass
+
+
     def compute_output(self):
         x, = self.input_nodes
         self.output_value = 1/(1 + np.exp(-x.output_value))
@@ -161,6 +179,10 @@ def sigmoid(x, name=None):
 class Relu(Operation):
     def __init__(self, x, name=None):
         super(self.__class__, self).__init__(x, name=name)
+
+    def get_shape(self):
+        pass
+
 
     def compute_output(self):
         x, = self.input_nodes
@@ -184,6 +206,11 @@ class BatchAverage(Operation):
         #self.output_value = np.zeros_like(x.output_value)
         self.total = np.zeros_like(x.output_value)
         self.counter = 0
+
+    def get_shape(self):
+        pass
+
+
 
     def compute_output(self):
         x, = self.input_nodes
@@ -210,6 +237,10 @@ class Log(Operation):
     def __init__(self, x, name=None):
         super(self.__class__, self).__init__(x, name=name)
 
+    def get_shape(self):
+        pass
+
+
     def compute_output(self):
         x, = self.input_ndoes
         self.outptu_value = np.log(x.output_value)
@@ -232,6 +263,11 @@ class Negative(Operation):
     def __init__(self, x, name=None):
         super(self.__class__, self).__init__(x, name=name)
 
+    def get_shape(self):
+        pass
+
+
+
     def compute_output(self):
         x, = self.input_nodes
         self.output_value = -np.array(x.output_value)
@@ -253,6 +289,10 @@ class ReduceSum(Operation):
     def __init__(self, x, axis=None):
         super(self.__class__, self).__init__(x)
         self.axis= axis
+
+    def get_shape(self):
+        pass
+
 
     def compute_output(self):
         x, = self.input_nodes
@@ -283,6 +323,10 @@ class Square(Operation):
     def __init__(self, x, name=None):
         super(self.__class__, self).__init__(x, name=name)
 
+    def get_shape(self):
+        pass
+
+
     def compute_output(self):
         x, = self.input_nodes
         self.output_value = np.square(x.output_value)
@@ -296,7 +340,7 @@ class Square(Operation):
         return grad*np.multiply(2.0, input_value)
 
 def square(x, name=None):
-    return Square(x, name=name)
+    return Square(x, name)
 
 
 # -------------------
@@ -306,6 +350,10 @@ class Argmax(Operation):
     def __init__(self, input_nodes, axis=None, name=None):
         super(self.__class__,self).__init__(input_nodes, name=name)
         self.axis = axis
+
+    def get_shape(self):
+        pass
+
 
     def compute_output(self):
         self.output_value = np.argmax(self.input_nodes[0].output_value, axis=self.axis)
@@ -327,6 +375,9 @@ class Equal(Operation):
     def __init__(self, pred, label, name=None):
         super(self.__class__,self).__init__(pred, label, name=name)
 
+    def get_shape(self):
+        pass
+
     def compute_output(self):
         pred, label = self.input_nodes
         if pred.output_value == label.output_value:
@@ -342,3 +393,28 @@ class Equal(Operation):
 
 def equal(pred, label, name=None):
     return Equal(pred, label, name=name)
+
+
+
+#----------------
+# Shape
+#----------------
+class Shape(Operation):
+    def __init__(self, name):
+        super(self.__class__,self).__init__(x, name=name)
+
+    def get_shape(self):
+        pass
+
+    def compute_output(self, input_nodes):
+        x, = self.input_nodes
+        if self.output_value is None:
+            self.output_value = x.output_value.shape
+        return self.output_value
+
+    def compute_gradient(self, grad=None):
+        grad = np.ones_like(self.input_nodes.output_value)
+        return grad
+
+def shape(input_nodes, name=None):
+    return Shape(input_nodes, name)

@@ -10,91 +10,82 @@ class Convolution2d(Operation):
         super(self.__class__,self).__init__(x, filter, name=name)
         self.strides = strides
         self.padding = padding
+        self.N, self.H, self.W, self.C = 0, 0, 0, 0
+        self.Hf, self.Wf, self.C, self.Cf_out = 0, 0, 0, 0
+        self.n, self.h, self.v, self.c = 0, 0, 0, 0
+        self.pad_H, self.pad_W = 0, 0
+        self.n_H, self.n_W = 0, 0
+        self.x = None
+        self.y = None
+        self.x_pad = None
+
+
+    def get_shape(self):
+        pass
 
 
     def compute_output(self):
 
-        x, y = self.input_nodes
-        N, H, W, C = x.output_value.shape
-        #print(self.filter.output_value)
-        Hf, Wf, Cf_in, Cf_out = y.output_value.shape
-        n, h, v, c = self.strides
+        self.x, self.y = self.input_nodes
+        self.N, self.H, self.W, self.C = self.x.output_value.shape
+        self.Hf, self.Wf, self.C, self.Cf_out = self.y.output_value.shape
+        self.n, self.h, self.v, self.c = self.strides
 
         if self.padding == 'same':
-            pad_H = Hf//2
-            pad_W = Wf//2
+            self.pad_H = self.Hf//2
+            self.pad_W = self.Wf//2
         else:
-            pad_H = pad_W = 0
+            self.pad_H = self.pad_W = 0
 
 
-        n_H = (H - Hf + 2*pad_H)//h + 1
-        n_W = (W - Wf + 2*pad_W)//v + 1
+        self.n_H = (self.H - self.Hf + 2*self.pad_H)//self.h + 1
+        self.n_W = (self.W - self.Wf + 2*self.pad_W)//self.v + 1
+        self.x_pad = zero_pad(self.x.output_value, self.pad_H, self.pad_W)
+        self.output_value = np.zeros((self.N, self.n_H, self.n_W, self.Cf_out))
 
-        x_pad = zero_pad(x.output_value, n_H, n_W)
-        y_pad = zero_pad(y.output_value, n_H, n_W)
-
-        self.output_value = np.zeros((N, n_H, n_W, Cf_out))
-
-        for batch in range(N):
-            slice = x.output_value[batch]
-            #slice = x_pad[batch]
-            for vindex in range(n_H):
-                for hindex in range(n_W):
-                    for cindex in range(Cf_out):
-                        vstart = vindex * h
-                        vend = vstart + Hf
-                        hstart = hindex * v
-                        hend = hstart + Wf
+        for batch in range(self.N):
+            for vindex in range(self.n_H):
+                for hindex in range(self.n_W):
+                    for cindex in range(self.Cf_out):
+                        vstart = vindex * self.h
+                        vend = vstart + self.Hf
+                        hstart = hindex * self.v
+                        hend = hstart + self.Wf
                         self.output_value[batch, hindex, vindex, cindex] \
-                            = slice_conv(slice[vstart:vend, hstart:hend], y.output_value[...,cindex])#y_pad[...,cindex])#y.output_value[...,cindex])
-        #assert(self.output_value.shape == (N, n_H, n_W, Cf_out))
-        #print('output_value:', self.output_value.shape)
+                            = slice_conv(self.x_pad[batch, vstart:vend, hstart:hend], self.y.output_value[...,cindex])
 
 
     def compute_gradient(self, grad=None):
-        x,y = self.input_nodes
-
-        N, H, W, C = x.output_value.shape
-        Hf, Wf, C, Cf_out = y.output_value.shape
-        #print('filter_shape:', self.filter.shape)
-        n, h, v, c = self.strides
-
-        if self.padding == 'same':
-            pad_H = Hf//2
-            pad_W = Wf//2
-        else:
-            pad_H = pad_W = 0
-
-        n_H = (H - Hf + 2*pad_H)//h + 1
-        n_W = (W - Wf + 2*pad_W)//v + 1
 
         if grad is None:
-            grad = np.ones_like((N, n_H, n_W, Cf_out))
+            grad = np.ones((self.N, self.n_H, self.n_W, self.Cf_out))
 
-        #print(grad)
-        #print(grad.shape)
-        dfdy = np.zeros((Hf, Wf, C, Cf_out))
-        dfdx = np.zeros((N, H, W, C))
-        for batch in range(N):
-            for hindex in range(n_H):
-                for vindex in range(n_W):
-                    vstart = hindex
-                    vend = hindex + Hf
-                    hstart = vindex
-                    hend = hstart + Wf
-                    for slice in range(Cf_out):
+        dfdy = np.zeros((self.Hf, self.Wf, self.C, self.Cf_out))
+        dfdx = np.zeros_like(self.x_pad)#((N, H, W, C))
+        for batch in range(self.N):
+            for hindex in range(self.n_H):
+                for vindex in range(self.n_W):
+                    vstart = hindex * self.v
+                    vend = vstart + self.Hf#hindex + Hf
+                    hstart = vindex * self.h
+                    hend = hstart + self.Wf
+                    for slice in range(self.Cf_out):
                         dZ = grad[batch, hindex, vindex, slice]
-                        dfdx[batch,hstart:hend,vstart:vend] += y.output_value[:,:,:,slice]*dZ
-                        dfdy[:,:,:,slice] += x.output_value[batch,hstart:hend,vstart:vend]*dZ
+                        dfdx[batch,hstart:hend,vstart:vend] += dZ * self.y.output_value[:,:,:,slice]
+                        dfdy[:,:,:,slice] += dZ * self.x_pad[batch,hstart:hend,vstart:vend]
 
-            return [dfdx, dfdy]
+
+        if self.padding == 'same':
+            dfdx = dfdx[:,self.pad_H:-self.pad_H,self.pad_W:-self.pad_W,:]
+
+        return [dfdx, dfdy]
+
+
 
 def conv2d(x, filter, strides, padding, name=None):
     return Convolution2d(x, filter, strides, padding, name=None)
 
-
 def slice_conv(slice, filter):
-    #print(np.sum(np.multiply(slice, filter)))
     return np.sum(np.multiply(slice, filter))
 
 def zero_pad(x, pad_H, pad_W):
@@ -106,17 +97,85 @@ def zero_pad(x, pad_H, pad_W):
 # Pooling
 # -----------------
 class MaxPool(Operation):
-    def __init__(self):
-        super(self.__class__,self).__init__()
+    def __init__(self, x, filter, strides, padding, name):
+        super(self.__class__,self).__init__(x, name=name)
+        self.strides = strides
+        self.padding = padding
+        self.N, self.H, self.W, self.C = 0, 0, 0, 0
+        self.Hf, self.Wf, self.C, self.Cf_out = 0, 0, 0, 0
+        self.n, self.h, self.v, self.c = 0, 0, 0, 0
+        self.pad_H, self.pad_W = 0, 0
+        self.n_H, self.n_W = 0, 0
+        self.x = None
+        self.filter = filter
+        self.x_pad = None
+
+
+    def get_shape(self):
+        pass
 
     def compute_output(self):
-        pass
 
-    def comptute_gradient(self):
-        pass
+        self.x, = self.input_nodes
+        self.N, self.H, self.W, self.C = self.x.output_value.shape
+        _, self.Hf, self.Wf, _ = self.filter
+        self.n, self.h, self.v, self.c = self.strides
 
-def maxpooling():
-    return MaxPool()
+        if self.padding == 'same':
+            self.pad_H = self.Hf//2
+            self.pad_W = self.Wf//2
+        else:
+            self.pad_H = self.pad_W = 0
+
+
+        self.n_H = (self.H - self.Hf + 2*self.pad_H)//self.h + 1
+        self.n_W = (self.W - self.Wf + 2*self.pad_W)//self.v + 1
+        self.x_pad = zero_pad(self.x.output_value, self.pad_H, self.pad_W)
+        self.output_value = np.zeros((self.N, self.n_H, self.n_W, self.C))
+
+        for batch in range(self.N):
+            for vindex in range(self.n_H):
+                for hindex in range(self.n_W):
+                    for cindex in range(self.C):
+                        vstart = vindex * self.h
+                        vend = vstart + self.Hf
+                        hstart = hindex * self.v
+                        hend = hstart + self.Wf
+                        #print('output_value:', self.output_value[batch, hindex, vindex, cindex])
+                        #print('max_value:', max(self.x_pad[batch, vstart:vend, hstart:hend, cindex]))
+                        #print('value:', self.x_pad[batch, vstart:vend, hstart:hend, cindex])
+                        self.output_value[batch, hindex, vindex, cindex] \
+                            = np.max(self.x_pad[batch, vstart:vend, hstart:hend, cindex])#, self.y.output_value[...,cindex])
+
+
+    def compute_gradient(self, grad=None):
+        if grad is None:
+            grad = np.ones((self.N, self.n_H, self.n_W, self.C))
+
+        #dfdy = np.zeros((self.Hf, self.Wf, self.C, self.Cf_out))
+        dfdx = np.zeros_like(self.x_pad)#((N, H, W, C))
+        dfdf = np.zeros(self.filter)
+
+        for batch in range(self.N):
+            for hindex in range(self.n_H):
+                for vindex in range(self.n_W):
+                    vstart = hindex * self.v
+                    vend = vstart + self.Hf#hindex + Hf
+                    hstart = vindex * self.h
+                    hend = hstart + self.Wf
+                    for slice in range(self.C):
+                        dZ = grad[batch, hindex, vindex, slice]
+                        dfdx[batch,hstart:hend,vstart:vend] += dZ * dfdf[batch]#self.y.output_value[:,:,:,slice]
+                        #dfdy[:,:,:,slice] += dZ * self.x_pad[batch,hstart:hend,vstart:vend]
+
+
+        if self.padding == 'same':
+            dfdx = dfdx[:,self.pad_H:-self.pad_H,self.pad_W:-self.pad_W,:]
+
+        return dfdx
+
+def maxpooling(x, filter, strides, padding, name=None):
+    return MaxPool(x, filter, strides, padding, name)
 
 
 # ----------------
@@ -125,10 +184,18 @@ def maxpooling():
 class Merge(Operation):
     def __init__(self, x):
         super(self.__class__,self).__init__(x)
+        self.output_value = []
+        self.shape = None
+
+    def get_shape(self):
+        if self.shape is None:
+            self.shape = [0,0]
+        return self.shape
 
     def compute_output(self):
         x, = self.input_nodes
         self.output_value = x.output_value.reshape((1,-1))
+        self.shape = self.output_value.shape
 
     def compute_gradient(self, grad=None):
         x, = self.input_nodes

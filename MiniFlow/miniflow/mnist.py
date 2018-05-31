@@ -37,7 +37,7 @@ class DataUtils(object):
                 if imgVal[j] > 1:
                     imgVal[j] = 1
                 #else:
-                #    imgVal[j] = [0]
+                #    imgVal[j] = 0
             images.append(np.array(imgVal).reshape(28,28,1))
         return np.array(images)
     	
@@ -57,7 +57,6 @@ class DataUtils(object):
 
     def outImg(self, arrX, arrY):
         m, n = np.shape(arrX)
-        #每张图是28*28=784Byte
         for i in range(1):
             img = np.array(arrX[i])
             img = img.reshape(28,28)

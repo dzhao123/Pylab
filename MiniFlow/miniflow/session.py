@@ -39,7 +39,7 @@ def _get_prerequisite(operation):
     postorder_nodes = []
 
     def postorder_traverse(operation):
-        if isinstance(operation, Operation):
+        if isinstance(operation, Operation) or isinstance(operation, Variable):
             for input_node in operation.input_nodes:
                 postorder_traverse(input_node)
         postorder_nodes.append(operation)

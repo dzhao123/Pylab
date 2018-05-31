@@ -1,4 +1,4 @@
-from .function import *
+from .constant import *
 from .graph import *
 from .mnist import *
 from .operator import *
