@@ -33,9 +33,9 @@ class DataUtils(object):
             index += struct.calcsize(self._pictureBytes2)
             imgVal = list(imgVal)
             for j in range(len(imgVal)):
-                imgVal[j] = imgVal[j]/255
-                if imgVal[j] > 1:
-                    imgVal[j] = 1
+                imgVal[j] = np.float(imgVal[j]/255)
+                #if imgVal[j] > 1:
+                #    imgVal[j] = 1
                 #else:
                 #    imgVal[j] = 0
             images.append(np.array(imgVal).reshape(28,28,1))

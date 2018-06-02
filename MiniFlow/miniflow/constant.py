@@ -51,11 +51,11 @@ class RandomNormal(Constant):
         self.output_value = np.random.normal(self.value[1], self.value[2], self.value[0])
         return self.output_value
 
-    def compute_gradient(self):
-        return np.zeros_like(self.output_value)
+    #def compute_gradient(self):
+    #    return np.ones_like(self.output_value)
 
 def random_normal(input_shape, mu, sigma, name=None):
-    return RandomNormal(input_shape, mu, sigma, name=name)
+    return RandomNormal(input_shape, mu, sigma, name=name).compute_output()
 
 
 #---------------
@@ -90,9 +90,9 @@ class TruncatedNormal(Constant):
                 (np.random.randn(self.value[0][0],self.value[0][1],self.value[0][2],self.value[0][3])+self.value[1])*self.value[2]
         return self.output_value
 
-    def compute_gradient(self):
-        return np.zeros_like(self.output_value)
+    #def compute_gradient(self):
+    #    return np.ones_like(self.output_value)
 
 
-def truncated_normal(input_shape, mu=0.0, sigma=1.0, name=None):
-    return TruncatedNormal(input_shape, mu, sigma, name=name)
+def truncated_normal(input_shape, mu=0.0, sigma=0.1, name=None):
+    return TruncatedNormal(input_shape, mu, sigma, name=name).compute_output()

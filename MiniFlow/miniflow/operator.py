@@ -13,6 +13,7 @@ class Operation(object):
         self.name = name
         self.graph = DEFAULT_GRAPH
 
+
         for node in input_nodes:
             node.output_nodes.append(self)
         self.graph.operations.append(self)
@@ -44,10 +45,6 @@ class Operation(object):
 class Add(Operation):
     def __init__(self, x, y, name=None):
         super(self.__class__, self).__init__(x, y, name=name)
-
-    def get_shape(self):
-        pass
-
 
 
     def compute_output(self):
@@ -88,8 +85,6 @@ class Multiply(Operation):
     def __init__(self, x, y, name=None):
         super(self.__class__, self).__init__(x, y, name=name)
 
-    def get_shape(self):
-        pass
 
     def compute_output(self):
         x, y = self.input_nodes
@@ -129,9 +124,6 @@ class MatMul(Operation):
     def __init__(self, x, y, name=None):
         super(self.__class__, self).__init__(x, y, name=name)
 
-    def get_shape(self):
-        pass
-
     def compute_output(self):
         x, y = self.input_nodes
         self.output_value = np.dot(x.output_value, y.output_value)
@@ -159,10 +151,6 @@ class Sigmoid(Operation):
     def __init__(self, x, name=None):
         super(self.__class__, self).__init__(x, name=name)
 
-    def get_shape(self):
-        pass
-
-
     def compute_output(self):
         x, = self.input_nodes
         self.output_value = 1/(1 + np.exp(-x.output_value))
@@ -180,13 +168,8 @@ class Relu(Operation):
     def __init__(self, x, name=None):
         super(self.__class__, self).__init__(x, name=name)
 
-    def get_shape(self):
-        pass
-
-
     def compute_output(self):
         x, = self.input_nodes
-        #print(x.output_value)
 
         self.output_value = np.maximum(x.output_value,0)
 
@@ -206,11 +189,6 @@ class BatchAverage(Operation):
         #self.output_value = np.zeros_like(x.output_value)
         self.total = np.zeros_like(x.output_value)
         self.counter = 0
-
-    def get_shape(self):
-        pass
-
-
 
     def compute_output(self):
         x, = self.input_nodes
@@ -237,10 +215,6 @@ class Log(Operation):
     def __init__(self, x, name=None):
         super(self.__class__, self).__init__(x, name=name)
 
-    def get_shape(self):
-        pass
-
-
     def compute_output(self):
         x, = self.input_ndoes
         self.outptu_value = np.log(x.output_value)
@@ -262,11 +236,6 @@ def log(x, name=None):
 class Negative(Operation):
     def __init__(self, x, name=None):
         super(self.__class__, self).__init__(x, name=name)
-
-    def get_shape(self):
-        pass
-
-
 
     def compute_output(self):
         x, = self.input_nodes
@@ -290,9 +259,6 @@ class ReduceSum(Operation):
         super(self.__class__, self).__init__(x)
         self.axis= axis
 
-    def get_shape(self):
-        pass
-
 
     def compute_output(self):
         x, = self.input_nodes
@@ -310,7 +276,8 @@ class ReduceSum(Operation):
         output_shape[self.axis] = 1.0
         tile_scaling = np.shape(input_value) // output_shape
         grad = np.reshape(grad, output_shape)
-        return np.tile(grad, tile_scaling)
+        #print('output_value:', self.output_value)
+        return np.tile(grad, tile_scaling)#*self.output_value
 
 def reduce_sum(x, axis=None):
     return ReduceSum(x, axis=axis)
@@ -322,10 +289,6 @@ def reduce_sum(x, axis=None):
 class Square(Operation):
     def __init__(self, x, name=None):
         super(self.__class__, self).__init__(x, name=name)
-
-    def get_shape(self):
-        pass
-
 
     def compute_output(self):
         x, = self.input_nodes
@@ -343,6 +306,31 @@ def square(x, name=None):
     return Square(x, name)
 
 
+
+# -------------
+# Square
+# -------------
+class CrossEntropy(Operation):
+    def __init__(self, x, y, name=None):
+        super(self.__class__, self).__init__(x, y, name=name)
+
+    def compute_output(self):
+        x, y = self.input_nodes
+        self.output_value = x.output_value*np.square(x.output_value)
+
+    def compute_gradient(self, grad=None):
+        input_value = self.input_nodes[0].output_value
+
+        if grad is None:
+            grad = np.ones_like(self.output_value)
+
+        return grad*np.multiply(2.0, input_value)
+
+def cross_entropy_with_logits(x, name=None):
+    return Square(x, name)
+
+
+
 # -------------------
 # Argmax
 # -------------------
@@ -351,17 +339,13 @@ class Argmax(Operation):
         super(self.__class__,self).__init__(input_nodes, name=name)
         self.axis = axis
 
-    def get_shape(self):
-        pass
-
-
     def compute_output(self):
         self.output_value = np.argmax(self.input_nodes[0].output_value, axis=self.axis)
         return self.output_value
 
     def compute_gradient(self, grad=None):
-        #if grad is None:
-        grad = np.zeros_like(self.input_nodes[0].output_value)
+        if grad is None:
+            grad = np.zeros_like(self.input_nodes[0].output_value)
         return grad
 
 def argmax(input_nodes, axis, name=None):
@@ -375,11 +359,10 @@ class Equal(Operation):
     def __init__(self, pred, label, name=None):
         super(self.__class__,self).__init__(pred, label, name=name)
 
-    def get_shape(self):
-        pass
-
     def compute_output(self):
         pred, label = self.input_nodes
+        #print(pred.output_value)
+        #print(label.output_value)
         if pred.output_value == label.output_value:
             self.output_value = 1
         else:
@@ -387,8 +370,8 @@ class Equal(Operation):
         return self.output_value
 
     def compute_gradient(self, grad=None):
-        #if grad is None:
-        grad = np.zeros_like(self.input_nodes.output_value)
+        if grad is None:
+            grad = np.zeros_like(self.input_nodes.output_value)
         return grad
 
 def equal(pred, label, name=None):
@@ -403,9 +386,6 @@ class Shape(Operation):
     def __init__(self, name):
         super(self.__class__,self).__init__(x, name=name)
 
-    def get_shape(self):
-        pass
-
     def compute_output(self, input_nodes):
         x, = self.input_nodes
         if self.output_value is None:
@@ -413,8 +393,35 @@ class Shape(Operation):
         return self.output_value
 
     def compute_gradient(self, grad=None):
-        grad = np.ones_like(self.input_nodes.output_value)
+        if grad is None:
+            grad = np.ones_like(self.input_nodes.output_value)
         return grad
 
 def shape(input_nodes, name=None):
     return Shape(input_nodes, name)
+
+
+class Softmax(Operation):
+    def __init__(self, name):
+        super(self.__class__,self).__init__(x, name=name)
+
+    def compute_output(self, input_nodes):
+        x, y = self.input_nodes
+        #if self.output_value is None:
+        output= np.exp(x.output_value, dytpe=np.float128)
+        probs = output/np.sum(output, axis=1)
+        self.output_value = probs#np.log(np.sum(probs*y.output_value))
+        return self.output_value
+
+    def compute_gradient(self, grad=None):
+        if grad is None:
+            grad = np.ones_like(self.input_nodes[0].output_value)
+        return grad
+
+def softmax_with_logits(x,y):
+	eout = np.exp(out, dtype=np.float128)
+	probs = eout/sum(eout)
+
+	p = sum(y*probs)
+	cost = -np.log(p)	## (Only data loss. No regularised loss)
+	return cost,probs

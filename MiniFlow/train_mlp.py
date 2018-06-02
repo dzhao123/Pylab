@@ -15,6 +15,9 @@ test_X = np.array(test_X)
 test_y = np.array(test_y)
 
 
+
+
+###MLP
 with mf.Graph().as_default():
 
     x = mf.placeholder()
@@ -38,7 +41,7 @@ with mf.Graph().as_default():
     y3 = mf.relu(mf.matmul(y2,w3)+b3)
     #y3 = batch_average(y3)
     loss = mf.reduce_sum(mf.square(y_-y3))
-    train_op = mf.GradientDescentOptimizer(learning_rate=0.0045).minimize(loss)
+    train_op = mf.GradientDescentOptimizer(learning_rate=0.005).minimize(loss)
     #train_op = mf.ExponentialDecay(learning_rate=0.01, decay_rate=0.01).minimize(loss)
     train_y = mf.onehot_encoding(train_y, 10)#normalization(train_y,10)
     test_y = mf.onehot_encoding(test_y, 10)#normalization(test_y,10)
@@ -48,7 +51,7 @@ with mf.Graph().as_default():
 
 with mf.Session() as sess:
     epoches = 3
-    batch_size = 3000
+    batch_size = 300
     batches = int(len(train_X)/batch_size)
     #remains = len(train_X) - batches*batch_size
 
@@ -59,14 +62,14 @@ with mf.Session() as sess:
             mse = 0
             start = batch*batch_size
             end = (batch+1)*batch_size
-            for index in range(start,end):
-                X = [train_X[index]]#[start:end]
-                Y = [train_y[index]]#[start:end]
-                feed_dict = {x:X, y_:Y}
-                loss_value += sess.run(loss, feed_dict)
-                mse += loss_value/len(X)
-                sess.run(train_op, feed_dict)
-                accuracy += sess.run(accurate, feed_dict)
+            #for index in range(start,end):
+            X = train_X[start:end]
+            Y = train_y[start:end]
+            feed_dict = {x:X, y_:Y}
+            loss_value,_ = sess.run([loss, train_op], feed_dict)
+            mse = loss_value/len(X)
+            #sess.run(train_op, feed_dict)
+            accuracy = sess.run(accurate, feed_dict)
             print('step:{}, batch:{}, loss:{}, mse:{}, accuracy:{}'.format(step, batch, loss_value, mse, accuracy/(end-start)))
     test_acc = 0
     for batch in range(len(test_X)):

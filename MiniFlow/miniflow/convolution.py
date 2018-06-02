@@ -20,10 +20,6 @@ class Convolution2d(Operation):
         self.x_pad = None
 
 
-    def get_shape(self):
-        pass
-
-
     def compute_output(self):
 
         self.x, self.y = self.input_nodes
@@ -77,6 +73,9 @@ class Convolution2d(Operation):
 
         if self.padding == 'same':
             dfdx = dfdx[:,self.pad_H:-self.pad_H,self.pad_W:-self.pad_W,:]
+
+        #print('dfdx:', dfdx)
+        #print('dfdy:', dfdy)
 
         return [dfdx, dfdy]
 
@@ -154,7 +153,7 @@ class MaxPool(Operation):
 
         #dfdy = np.zeros((self.Hf, self.Wf, self.C, self.Cf_out))
         dfdx = np.zeros_like(self.x_pad)#((N, H, W, C))
-        dfdf = np.zeros(self.filter)
+        dfdf = np.ones(self.filter)
 
         for batch in range(self.N):
             for hindex in range(self.n_H):
@@ -164,7 +163,7 @@ class MaxPool(Operation):
                     hstart = vindex * self.h
                     hend = hstart + self.Wf
                     for slice in range(self.C):
-                        dZ = grad[batch, hindex, vindex, slice]
+                        dZ = grad[batch, hindex, vindex]
                         dfdx[batch,hstart:hend,vstart:vend] += dZ * dfdf[batch]#self.y.output_value[:,:,:,slice]
                         #dfdy[:,:,:,slice] += dZ * self.x_pad[batch,hstart:hend,vstart:vend]
 
@@ -184,13 +183,8 @@ def maxpooling(x, filter, strides, padding, name=None):
 class Merge(Operation):
     def __init__(self, x):
         super(self.__class__,self).__init__(x)
-        self.output_value = []
+        #self.output_value = []
         self.shape = None
-
-    def get_shape(self):
-        if self.shape is None:
-            self.shape = [0,0]
-        return self.shape
 
     def compute_output(self):
         x, = self.input_nodes

@@ -19,17 +19,16 @@ class Variable(object):
         if trainable:
             self.graph.trainable_variables.append(self)
 
-        self.input_nodes.append(initial_value)
+        #self.input_nodes.append(initial_value)
 
         #self.initial_value.output_nodes.append(self)
 
 
-    def get_shape(self):
-        pass
-
     def compute_output(self):
         if self.output_value is None:
-            self.output_value = self.initial_value.output_value
+            self.output_value = self.initial_value#.output_value
+        #print('initial_value:', self.output_value)
+        #print('nod_name:', self.name)
         return self.output_value
 
 
