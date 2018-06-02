@@ -3,7 +3,7 @@
 A computing graph written in python from scratch.
 
 ## Getting Started
-‘’’Python
+``` python
 
 import miniflow as mf
 import numpy as np
