@@ -50,10 +50,7 @@ with mf.Graph().as_default():
     b6 = mf.Variable(mf.random_normal([n_classes], mu=0.0, sigma=0.1), name = 'b6')
     y6 = mf.sigmoid(mf.matmul(y5,w6)+b6)
     loss = mf.reduce_sum(mf.square(y_-y6))
-    #train_op = mf.GradientDescentOptimizer(learning_rate=0.0005).minimize(loss)
     train_op = mf.ExponentialDecay(learning_rate=0.01, decay_rate=0.01).minimize(loss)
-    #train_op = mf.MomentumGDOptimizer(learning_rate=0.005, decay_rate=1e-6, beta=0.9).minimize(loss)
-    #train_op = mf.AdamOptimizer(learning_rate=0.001).minimize(loss)
     train_y = mf.onehot_encoding(train_y, 10)#normalization(train_y,10)
     test_y = mf.onehot_encoding(test_y, 10)
     accurate = mf.equal(mf.argmax(y6,1), mf.argmax(y_,1))
@@ -81,6 +78,34 @@ with mf.Session() as sess:
     #for batch in range(len(test_X)):
     test_acc = sess.run(mf.equal(mf.argmax(y6,1),mf.argmax(y_,1)), feed_dict={x:np.array(test_X),y_:np.array(test_y)})
     print('test accuracy:{}'.format(test_acc/len(test_X)))
+```
+## Result
+
+```
+step:0, batch:0, loss:1288.206707465247, mse:0.429402235821749, accuracy:0.908
+step:0, batch:1, loss:526.0707037697366, mse:0.17535690125657888, accuracy:0.905
+step:0, batch:2, loss:477.68339027107345, mse:0.15922779675702448, accuracy:0.9273333333333333
+step:0, batch:3, loss:357.49202307960144, mse:0.11916400769320049, accuracy:0.95
+step:0, batch:4, loss:371.9437422040999, mse:0.12398124740136664, accuracy:0.9433333333333334
+step:0, batch:5, loss:319.71496349655695, mse:0.10657165449885232, accuracy:0.949
+step:0, batch:6, loss:264.84454334452556, mse:0.08828151444817518, accuracy:0.9513333333333334
+step:0, batch:7, loss:269.494821454531, mse:0.08983160715151034, accuracy:0.957
+step:0, batch:8, loss:263.1669367817608, mse:0.08772231226058694, accuracy:0.961
+step:0, batch:9, loss:266.84406589270037, mse:0.08894802196423346, accuracy:0.9516666666666667
+step:0, batch:10, loss:254.7459565524755, mse:0.08491531885082516, accuracy:0.9693333333333334
+step:0, batch:11, loss:200.9247728171663, mse:0.06697492427238877, accuracy:0.9686666666666667
+step:0, batch:12, loss:193.63583051707397, mse:0.06454527683902465, accuracy:0.9566666666666667
+step:0, batch:13, loss:206.0093810458327, mse:0.06866979368194423, accuracy:0.9756666666666667
+step:0, batch:14, loss:205.71530124131363, mse:0.06857176708043787, accuracy:0.9763333333333334
+step:0, batch:15, loss:217.08896871355122, mse:0.07236298957118374, accuracy:0.9606666666666667
+step:0, batch:16, loss:193.0210534792457, mse:0.06434035115974857, accuracy:0.9786666666666667
+step:0, batch:17, loss:184.72346288978068, mse:0.06157448762992689, accuracy:0.978
+step:0, batch:18, loss:141.90972967174852, mse:0.04730324322391617, accuracy:0.9816666666666667
+step:0, batch:19, loss:94.39119663702601, mse:0.031463732212342006, accuracy:0.9866666666666667
+test accuracy:0.971
+
+```
+
 
 ## Features
 
